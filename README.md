@@ -27,8 +27,9 @@ ID=0x311 Send by battery and includes all limits, related to the battery chargin
 ID=0x313 - Send by the battery and include some of current statuses
 - [D0:D1] = System voltage * 0.1V
 - [D2:D3] = Total current * 0.1A passing trough the ARK BMS. If the value is greater than 0 - charging, if it lower than 0 discharging.
-- [D4:D5] = max discharging currnet * 0.1A - 25A(0x00,0xFA)
+- [D4:D5] = unknown
 - [D6] = SOC in %
+- [D7] = may be SOH but not confirmed.
 
 CAN Bus wires the middle 2 wires in RJ45 connector - when using standard ethernet cable those are the BLUE (CAN_H) and BLUE-WHITE (CAN_L).
 
